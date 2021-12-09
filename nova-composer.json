@@ -1,0 +1,15 @@
+{
+    "require": {
+        "bissolli/nova-phone-field": "^0.0.4",
+        "gregoriohc/laravel-nova-theme-responsive": "^0.8.1",
+        "idf/nova-html-card": "^1.2",
+        "inspheric/nova-email-field": "^1.42",
+        "inspheric/nova-indicator-field": "^1.43",
+        "maatwebsite/laravel-nova-excel": "dev-feature/add-field-macro-helpers-for-export-availability",
+        "optimistdigital/nova-multiselect-filter": "^2.0",
+        "optimistdigital/nova-notes-field": "^2.0",
+        "optimistdigital/nova-table-field": "^1.0",
+        "optimistdigital/nova-tailwind": "^1.1",
+        "pktharindu/nova-permissions": "^2.1"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "wefabric/support",
+    "description": "Support classes for Laravel and WordPress",
+    "type": "library",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Leo Flapper",
+            "email": "leo@wefabric.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1|8.*",
+        "illuminate/support": "*",
+        "wefabric/excel": "*",
+        "wefabric/address": "*",
+        "wefabric/countries": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wefabric\\Support\\": "src"
+        },
+        "files": [
+            "./src/helpers.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
