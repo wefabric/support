@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 class PivotSuperAdminCheck
 {
 
+    /**
+     * Add PivotSuperAdminCheck::check(); to the 'EventServiceProvider' boot method to initiate the super admin check.
+     */
     public static function check()
     {
         Pivot::creating(function(Pivot $pivot) {
