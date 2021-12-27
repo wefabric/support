@@ -674,7 +674,9 @@ class Money extends AbstractMoney
             return number_format($price->getAmount()->toInt(), $decimals, ',', '.');
         }
 
-        return $price->formatTo(config('app.locale'));
+        $result = $price->formatTo(config('app.locale'));
+        $result = str_replace(',00', '', $result);
+        return $result;
     }
 
     /**
