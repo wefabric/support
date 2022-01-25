@@ -19,8 +19,13 @@ class CollectionToStringAction
     {
         $result = '';
         foreach ($collection as $itemKey => $item) {
+            $value = $item;
+            if(!is_string($item)) {
+                $value = $item->{$key};
+            }
+
             if(0 === $itemKey) {
-                $result .= $item->{$key};
+                $result .= $value;
             }
 
             if(0 !== $itemKey && $collection->count() - 1 === $itemKey) {
@@ -29,9 +34,9 @@ class CollectionToStringAction
                     $lastItemText = __('of');
                 }
 
-                $result .= ' '.$lastItemText.' '.$item->{$key};
+                $result .= ' '.$lastItemText.' '.$value;
             } elseif(0 !== $itemKey){
-                $result .= ', '.$item->{$key};
+                $result .= ', '.$value;
             }
         }
         return $result;
