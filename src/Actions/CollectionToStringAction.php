@@ -20,7 +20,7 @@ class CollectionToStringAction
         $result = '';
         foreach ($collection as $itemKey => $item) {
             $value = $item;
-            if(!is_numeric($item)) {
+            if(!is_numeric($item) && !is_string($item)) {
                 $value = $item->{$key};
             }
 
