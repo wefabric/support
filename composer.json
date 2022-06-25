@@ -2,7 +2,7 @@
     "name": "wefabric/support",
     "description": "Support classes for Laravel and WordPress",
     "type": "library",
-    "version": "1.0.0",
+    "version": "0.1.1",
     "authors": [
         {
             "name": "Leo Flapper",
