@@ -2,7 +2,6 @@
     "name": "wefabric/support",
     "description": "Support classes for Laravel and WordPress",
     "type": "library",
-    "version": "0.1.1",
     "authors": [
         {
             "name": "Leo Flapper",
@@ -11,11 +10,11 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.1|8.*",
+        "php": "8.*",
         "illuminate/support": "*",
-	    "stefangabos/world_countries": "^2.5",
+	"stefangabos/world_countries": "^2.5",
         "brick/money": "^0.5.0",
-        "spatie/laravel-collection-macros": "^7.6"
+        "spatie/laravel-collection-macros": "^7.11.0"
     },
     "autoload": {
         "psr-4": {
